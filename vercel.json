@@ -1,7 +1,11 @@
 {
+    "version": 1,
+    "name": "will-it-miss",
     "builds": [
       {
-        "config": { "distDir": "dist" }
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "public" }
       }
     ]
   }
